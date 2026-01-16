@@ -1,7 +1,27 @@
-# Hello Friend NG
+# Hello Friend NG Extended
 
-![Hello Friend NG](https://dsh.re/d914c)
+![Hello Friend NG Extended](./images/home.png)
 
+![Hello Friend NG Extended Posts](./images/posts.png)
+
+![Hello Friend NG Extended Post with Cusdis](./images/cusdis.png)
+
+Fork of [rhazdon/hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/) with some small style changes and additions:
+
+- Menu items, page titles, dates etc. all forced to lowercase.
+- Changed date format in post view to use `dateFormatLong`
+- Added out of the box [Cusdis (comment system)](https://cusdis.com/) integration
+- Changed old twitter icon in post socials to the new X icon
+
+To enable Cusdis as your comment system, just specify your App ID in your configuration _.toml_ file as follows:
+
+```
+[params]
+  [params.cusdis]
+    appId = "<your-app-id>"
+```
+
+# Original README below
 ## General informations
 
 This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit). A lot of kudos for their great work.
