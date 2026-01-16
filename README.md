@@ -2,10 +2,6 @@
 
 ![Hello Friend NG Extended](./images/home.png)
 
-![Hello Friend NG Extended Posts](./images/posts.png)
-
-![Hello Friend NG Extended Post with Cusdis](./images/cusdis.png)
-
 Fork of [rhazdon/hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/) with some small style changes and additions:
 
 - Menu items, page titles, dates etc. all forced to lowercase.
@@ -20,6 +16,12 @@ To enable Cusdis as your comment system, just specify your App ID in your config
   [params.cusdis]
     appId = "<your-app-id>"
 ```
+
+## Screenshots
+
+![Hello Friend NG Extended Posts](./images/posts.png)
+
+![Hello Friend NG Extended Post with Cusdis](./images/cusdis.png)
 
 # Original README below
 ## General informations
