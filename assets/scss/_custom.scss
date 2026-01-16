@@ -1,0 +1,17 @@
+/* Custom style adjustments for Cusdis */
+#cusdis_thread {
+  display: flex;
+  height: 40em;
+  margin-top: 2rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+#cusdis_thread * {
+  font-family: inherit;
+}
+
+#cusdis_thread iframe {
+  border: none;
+  width: 100%;
+}
