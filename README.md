@@ -14,7 +14,8 @@ Fork of [rhazdon/hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-fr
 To enable Artalk as your comment system, just specify your Artalk Server URL and site name in your configuration _.toml_ file as follows:
 
 ```
-[params.artalk]
+[params]
+  [params.artalk]
     serverUrl = "https://your.url"
     siteName = "your site"
 ```
