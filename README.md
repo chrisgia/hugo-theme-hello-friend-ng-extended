@@ -6,8 +6,20 @@ Fork of [rhazdon/hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-fr
 
 - Menu items, page titles, dates etc. all forced to lowercase.
 - Changed date format in post view to use `dateFormatLong`
-- Added out of the box [Cusdis (comment system)](https://cusdis.com/) integration
+- Added out of the box [Artalk](https://artalk.js.org/) & [Cusdis](https://cusdis.com/) (comment systems) integration
 - Changed old twitter icon in post socials to the new X icon
+
+## Artalk 
+
+To enable Artalk as your comment system, just specify your Artalk Server URL and site name in your configuration _.toml_ file as follows:
+
+```
+[params.artalk]
+    serverUrl = "https://your.url"
+    siteName = "your site"
+```
+
+## Cusdis
 
 To enable Cusdis as your comment system, just specify your App ID in your configuration _.toml_ file as follows:
 
@@ -21,7 +33,7 @@ To enable Cusdis as your comment system, just specify your App ID in your config
 
 ![Hello Friend NG Extended Posts](./images/posts.png)
 
-![Hello Friend NG Extended Post with Cusdis](./images/cusdis.png)
+![Hello Friend NG Extended Post with Artalk](./images/artalk.png)
 
 # Original README below
 ## General informations
