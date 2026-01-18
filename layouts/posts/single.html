@@ -1,4 +1,9 @@
 {{ define "main" }}
+  <script>
+    // store current theme
+    const theme = localStorage.getItem('theme');
+  </script>
+
   <div class="content">
     <main class="post">
 
@@ -157,7 +162,29 @@
 
       <script defer data-host="https://cusdis.com" data-app-id="{{ .Site.Params.cusdis.appId }}" src="https://cusdis.com/js/cusdis-count.umd.js"></script>
       <script async defer src="{{ "js/cusdis.es.js" | relURL }}"></script>
-    {{ end }}
+      {{ end }}
+
+      {{ if .Site.Params.Artalk.ServerUrl }}
+      <link href="{{ .Site.Params.artalk.serverUrl }}/dist/Artalk.css" rel="stylesheet" />
+      <script src="{{ .Site.Params.artalk.serverUrl }}/dist/Artalk.js"></script>
+      <div id="Comments"></div>
+      <script>
+        const artalk = Artalk.init({
+          el:        '#Comments',
+          pageKey:   '{{ .Permalink }}',
+          server:    '{{ .Site.Params.artalk.serverUrl }}',
+          site:      '{{ if .Site.Params.artalk.siteName }}{{ .Site.Params.artalk.siteName }}{{ else }}Artalk Blog{{ end }}',
+          darkMode: 'auto'
+        });
+        
+        // manually update Artalk theme based on current theme
+        if (theme === 'dark') {
+          artalk.setDarkMode(theme === 'dark')
+        } else if (theme === 'light') {
+          artalk.setDarkMode(false)
+        }
+      </script>
+      {{ end }}
     </main>
   </div>
 {{ end }}
